@@ -29,7 +29,19 @@
                 anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage'],
                 menu: '#menu',
                 css3: true,
-                scrollingSpeed: 1000
+                scrollingSpeed: 1000,
+                onLeave: function(index, nextIndex, direction){
+                    var leavingSection = $(this);
+
+                    //after leaving section 2
+                    if(index == 1 && direction =='down'){
+                        $("#menu").removeClass("whitemenu")
+                    }
+
+                    else if(index == 2 && direction == 'up'){
+                        $("#menu").addClass("whitemenu")
+                    }
+                }
             });
 
             $('#showExamples').click(function(e){
@@ -46,7 +58,7 @@
 
 </head>
 <body>
-<ul id="menu">
+<ul id="menu" class="menu whitemenu">
     <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
     <li data-menuanchor="secondPage"><a href="#secondPage">BACKGROUND</a></li>
     <li data-menuanchor="3rdPage"><a href="#3rdPage">HIGHLIGHTS</a></li>
@@ -58,7 +70,7 @@
 
 <div id="fullpage">
     <div class="section active" id="section0">
-
+        <div class="logo"></div>
 
     </div>
     <div class="section" id="section1">

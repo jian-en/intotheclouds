@@ -87,7 +87,14 @@ p{
     font-size: 1.4rem;
     clear:both;
 }
-#menu li a{
+.menu li a{
+    border-bottom:1px solid rgba(0,0,0,.5);
+    display: block;
+    height:4rem;
+    float: left;
+    color: rgba(0, 0, 0, 0.5);;
+}
+.whitemenu li a{
     border-bottom:1px solid rgba(255,255,255,.5);
     display: block;
     height:4rem;
