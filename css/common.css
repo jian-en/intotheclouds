@@ -1,28 +1,115 @@
 #section0{
-    background:url(../img/1.jpg) no-repeat left top;
-    background-size: 100%;
+    background:url(../img/1.jpg) no-repeat right top;
+    background-size:100% 100%;
 }
 #section1{
-    background:url(../img/2.jpg) no-repeat left top;
-    background-size: 100%;
+    background:url(../img/2.jpg) no-repeat center top;
+    background-size:auto 100%;
 }
 #section2{
-    background:url(../img/3.jpg) no-repeat left top;
-    background-size: 100%;
+    background:url(../img/3.jpg) no-repeat center top;
+    background-size:auto 100%;
 }
 #section3{
-    background:url(../img/4.jpg) no-repeat left top;
-    background-size: 100%;
+    background:url(../img/4.jpg) no-repeat center top;
+    background-size:auto 100%;
 }
 #section4{
-    background:url(../img/5.jpg) no-repeat left top;
-    background-size: 100%;
+    background:url(../img/5.jpg) no-repeat center top;
+    background-size:auto 100%;
 }
 #section5{
-    background:url(../img/6.jpg) no-repeat left top;
-    background-size: 100%;
+    background:url(../img/6.jpg) no-repeat center top;
+    background-size:auto 100%;
 }
 #section6{
-    background:url(../img/7.jpg) no-repeat left top;
-    background-size: 100%;
+    background:url(../img/7.jpg) no-repeat center top;
+    background-size:auto 100%;
+}
+.logo{
+    width:16%;
+    position: absolute;
+    top:1rem;
+    left:50%;
+    margin-left:-7%;
+}
+.logo img{
+    width: 100%;
+}
+h2.slogan{
+    font-size: 2.4rem;
+    color:#fff;
+}
+button.login{
+    width:10rem;
+    height:2.5rem;
+    border-radius: 1.3rem;
+    border:1px solid #fff;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    color:#fff;
+    font-weight: 200;
+    position: absolute;
+    bottom:20%;
+    left:50%;
+    margin-left:-5rem;
+}
+.login-frame{
+    width:24rem;
+    height:10rem;
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    margin-left:-12rem;
+    background: rgba(255,255,255,.9);
+    border-radius: .3rem;
+}
+.login-frame .close{
+    width:2rem;
+    height:2rem;
+    right:-1rem;
+    top:-1rem;
+    background: #0498cd;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+.login-frame ul{
+    margin:0;
+    list-style: none;
+    padding:1rem 0;
+}
+.login-frame ul li{
+    height:2rem;
+    line-height: 2rem;
+    width:18rem;
+    margin:0 auto;
+    text-align: left;
+}
+.login-frame ul li label{
+    display: block;
+    width:20%;
+    float: left;
+    font-size:.5rem;
+}
+.login-frame ul li input{
+    width:80%;
+    border:none;
+    border-bottom:1px solid #000;
+    background: none;
+}
+.login-frame ul li button.get-info{
+    width:70%;
+    height:2rem;
+    border-radius: 1rem;
+    background: #0498cd;
+    color:#fff;
+    border:none;
+    margin:0 auto;
+    display: block;
+    margin-top:1rem
 }
