@@ -22,42 +22,11 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#000', 'red'],
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage'],
-                menu: '#menu',
-                css3: true,
-                scrollingSpeed: 1000,
-                onLeave: function(index, nextIndex, direction){
-                    var leavingSection = $(this);
-
-                    //after leaving section 2
-                    if(index == 1 && direction =='down'){
-                        $("#menu").removeClass("whitemenu")
-                    }
-
-                    else if(index == 2 && direction == 'up'){
-                        $("#menu").addClass("whitemenu")
-                    }
-                }
-            });
-
-            $('#showExamples').click(function(e){
-                e.stopPropagation();
-                e.preventDefault();
-                $('#examplesList').toggle();
-            });
-
-            $('html').click(function(){
-                $('#examplesList').hide();
-            });
-        });
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </head>
 <body>
+<div class="toggle-menu">=</div>
 <ul id="menu" class="menu whitemenu">
     <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
     <li data-menuanchor="secondPage"><a href="#secondPage">BACKGROUND</a></li>
@@ -83,6 +52,16 @@
         </div>
     </div>
     <div class="section" id="section1">
+        <div class="background">
+            <header class="title">1</header>
+            <section class="content">1</section>
+        </div>
+        <div class="background">
+            <header class="title">1</header>
+            <section class="content">1</section>
+        </div>
+    </div>
+    <div class="section" id="section2">
         <div class="slide active">
             1
         </div>
@@ -95,11 +74,7 @@
         <div class="slide">
             4
         </div>
-    </div>
-    <div class="section" id="section2">
-        <div class="intro">
 
-        </div>
     </div>
     <div class="section" id="section3">
         <div class="intro">
