@@ -26,8 +26,27 @@
     background:url(../img/7.jpg) no-repeat center top;
     background-size:100% 100%;
 }
+#section2 img{width:100%;height:auto;margin: 0}
+.fp-controlArrow.fp-prev {left:210px;}
 html{
     font-size: 20px;
+}
+i.point{
+    display: block;
+    width:1rem;
+    height:1rem;
+    border:1px solid #0a93c7;
+    border-radius: 50%;
+    background: #fff;
+    box-sizing: border-box;
+}
+i.point b{
+    width:.5rem;
+    height:.5rem;
+    margin: .22rem auto;
+    background: #0a93c7;
+    display: block;
+    border-radius: 50%;
 }
 .logo{
     width:10rem;
@@ -186,7 +205,15 @@ button.login{
     color: #333;
 }
 .learnings{
+    min-width: 1280px;
     height:21.5rem;
+    padding-bottom:7rem;
+}
+.learnings h3.learnings-title{
+    width:35rem;
+    font-size: 1.5rem;
+    margin:0 auto;
+    margin-bottom:4rem;
 }
 .learnings dl{
     display: -webkit-box;
@@ -201,24 +228,33 @@ button.login{
     text-align: right;
     font-size: #333;
     box-sizing: border-box;
-    padding-right:2rem;
+    padding-right:1rem;
+    position: relative;
+}
+.learnings dl dt i{
+    right:-.5rem;
+    top:.25rem;
+    position: absolute;
 }
 .learnings dl dd{
     width:50%;
     font-size: 1.2rem;
     text-align: left;
     color:#fff;
-    padding-left:.5rem;
+    padding-left:1rem;
     box-sizing: border-box;
 }
 .learnings dl:nth-child(2) dt{
-    width:41%;
+    width:46%;
 }
 .learnings dl:nth-child(3) dt{
-    width:35%;
+    width:38%;
 }
 .learnings dl:nth-child(4) dt{
-    width:31.5%;
+    width:32.5%;
+}
+.learnings dl:nth-child(5) dt{
+    width:32.5%;
 }
 
 h3.takeaways-title{
@@ -240,7 +276,6 @@ h3.takeaways-title{
 }
 .takeaways dl{
     text-align: left;
-    padding-left:2rem;
     margin-bottom:.5rem;
 }
 .takeaways dl dt{
@@ -248,9 +283,18 @@ h3.takeaways-title{
     font-size: .9rem;
     margin-bottom:.1rem;
 }
+.takeaways dl dt i{
+    float: left;
+    margin-right:1rem;
+}
+.takeaways dl dt span{
+    overflow: hidden;
+    display: block;
+}
 .takeaways dl dd{
     font-size: .7rem;
     line-height: 1.4;
+    padding-left:2rem;
     color:rgba(255,255,255,.3)
 }
 h3.team-title{
@@ -280,7 +324,6 @@ h3.team-title{
     width:5rem;
     height:5rem;
     border-radius: 50%;
-    border:1px solid #000;
     display: block;
     margin-bottom:.5rem;
     overflow: hidden;
@@ -295,8 +338,10 @@ h3.team-title{
 .team ul li.exp{
     font-size:.7rem;
 }
-.team .sendmail{
+.team .letter{
+    font-size: .5rem;
+}
+.team .letter img{
     width:5rem;
-    height:5rem;
-    border:1px solid #ccc;
+    margin-bottom:.5rem;
 }
