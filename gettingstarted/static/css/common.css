@@ -1,0 +1,302 @@
+#section0{
+    background:url(../img/1.jpg) no-repeat right bottom;
+    background-size:100% auto;
+}
+#section1{
+    background:url(../img/2.jpg) no-repeat center top;
+    background-size:100% 100%;
+}
+#section2{
+    background:url(../img/3.jpg) no-repeat center top;
+    background-size:100% 100%;
+}
+#section3{
+    background:url(../img/4.jpg) no-repeat center center;
+    background-size:100% auto;
+}
+#section4{
+    background:url(../img/5.jpg) no-repeat center top;
+    background-size:100% 100%;
+}
+#section5{
+    background:url(../img/6.jpg) no-repeat center top;
+    background-size:100% 100%;
+}
+#section6{
+    background:url(../img/7.jpg) no-repeat center top;
+    background-size:100% 100%;
+}
+html{
+    font-size: 20px;
+}
+.logo{
+    width:10rem;
+    position: absolute;
+    top:1rem;
+    left:50%;
+    margin-left:-5rem;
+}
+.logo img{
+    width: 100%;
+}
+h2.slogan{
+    font-size: 2rem;
+    color:#fff;
+    font-weight: 100;
+    margin-top:-4rem;
+}
+.toggle-menu{
+    position: fixed;
+}
+#menu{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 70;
+    width: 200px;
+    padding: 0;
+    margin:6.5rem 0 0 1.5rem;
+}
+#menu li{
+    width:200px;
+    height:3.5rem;
+    line-height: 3.5rem;
+    font-size: 1rem;
+    clear:both;
+}
+.menu li a{
+    border-bottom:1px solid rgba(0,0,0,.3);
+    display: block;
+    height:3.5rem;
+    float: left;
+    color: rgba(0, 0, 0, 0.3);;
+}
+.menu li.active a{
+    color:rgba(0,0,0,1);
+}
+.whitemenu li.active a{
+    color:rgba(255,255,255,1);
+}
+.whitemenu li a{
+    border-bottom:1px solid rgba(255,255,255,.5);
+    display: block;
+    height:3.5rem;
+    float: left;
+    color: rgba(255, 255, 255, 0.5);;
+}
+button.login{
+    width:10rem;
+    height:2.4rem;
+    border-radius: 1.3rem;
+    border:1px solid #fff;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    color:#fff;
+    font-weight: 200;
+    position: absolute;
+    bottom:20%;
+    left:50%;
+    margin-left:-5rem;
+}
+.login-frame{
+    width:24rem;
+    height:10rem;
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    margin-left:-12rem;
+    background: rgba(255,255,255,.9);
+    border-radius: .3rem;
+    display: none;
+}
+.login-frame .close{
+    width:2rem;
+    height:2rem;
+    right:-1rem;
+    top:-1rem;
+    background: #0498cd;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+.login-frame ul{
+    margin:0;
+    list-style: none;
+    padding:1rem 0;
+}
+.login-frame ul li{
+    height:2rem;
+    line-height: 2rem;
+    width:18rem;
+    margin:0 auto;
+    text-align: left;
+}
+.login-frame ul li label{
+    display: block;
+    width:20%;
+    float: left;
+    font-size:.5rem;
+}
+.login-frame ul li input{
+    width:80%;
+    border:none;
+    border-bottom:1px solid #000;
+    background: none;
+}
+.login-frame ul li button.get-info{
+    width:70%;
+    height:2rem;
+    border-radius: 1rem;
+    background: #0498cd;
+    color:#fff;
+    border:none;
+    margin:0 auto;
+    display: block;
+    margin-top:1rem
+}
+.background{
+    width:41.5rem;
+    height:13.5rem;
+    margin: 0 10% 0 auto;
+    border-radius:.5rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.2);
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+.background:first-child{
+    margin-bottom:2rem;
+}
+.background header.title{
+    height:4.3rem;
+    background: rgba(0, 160, 250, .4);
+    color:#fff;
+    font-size: 1.3rem;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-align:end;
+}
+.background section.content{
+    padding:1.5rem;
+    line-height: 1.6;
+    text-align: left;
+    color: #333;
+}
+.learnings{
+    height:21.5rem;
+}
+.learnings dl{
+    display: -webkit-box;
+    -webkit-box-align:start;
+    -webkit-box-pack:center;
+    margin-bottom:2.5rem;
+}
+
+.learnings dl dt{
+    width:50%;
+    font-size: 1.4rem;
+    text-align: right;
+    font-size: #333;
+    box-sizing: border-box;
+    padding-right:2rem;
+}
+.learnings dl dd{
+    width:50%;
+    font-size: 1.2rem;
+    text-align: left;
+    color:#fff;
+    padding-left:.5rem;
+    box-sizing: border-box;
+}
+.learnings dl:nth-child(2) dt{
+    width:41%;
+}
+.learnings dl:nth-child(3) dt{
+    width:35%;
+}
+.learnings dl:nth-child(4) dt{
+    width:31.5%;
+}
+
+h3.takeaways-title{
+    width:44.5rem;
+    font-size: 1.2rem;
+    margin-bottom:2rem;
+    float: right;
+    margin-right:7%;
+    color: #333;
+}
+.takeaways{
+    width:44.5rem;
+    height:27.7rem;
+    float: right;
+    margin-right:7%;
+    background: rgba(0, 0, 0, 0.5);
+    padding:2rem 1.5rem;
+    box-sizing: border-box;
+}
+.takeaways dl{
+    text-align: left;
+    padding-left:2rem;
+    margin-bottom:.5rem;
+}
+.takeaways dl dt{
+    color:#fff;
+    font-size: .9rem;
+    margin-bottom:.1rem;
+}
+.takeaways dl dd{
+    font-size: .7rem;
+    line-height: 1.4;
+    color:rgba(255,255,255,.3)
+}
+h3.team-title{
+    width:39rem;
+    font-size: 1.2rem;
+    color:#333;
+    margin:0 auto;
+    color:#8c8a8b;
+    margin-bottom:2rem;
+}
+.team{
+    width:45rem;
+    margin:0 auto;
+    display: -webkit-box;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+}
+.team ul{
+    width:33.3333%;
+    height:10rem;
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    -webkit-box-orient:vertical;
+}
+.team ul li.photo{
+    width:5rem;
+    height:5rem;
+    border-radius: 50%;
+    border:1px solid #000;
+    display: block;
+    margin-bottom:.5rem;
+    overflow: hidden;
+}
+.team ul li.photo img{
+    width:5rem;
+}
+.team ul li.name{
+    font-size: 1rem;
+    margin-bottom:.5rem;
+}
+.team ul li.exp{
+    font-size:.7rem;
+}
+.team .sendmail{
+    width:5rem;
+    height:5rem;
+    border:1px solid #ccc;
+}
