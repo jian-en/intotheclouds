@@ -22,42 +22,11 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#000', 'red'],
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage'],
-                menu: '#menu',
-                css3: true,
-                scrollingSpeed: 1000,
-                onLeave: function(index, nextIndex, direction){
-                    var leavingSection = $(this);
-
-                    //after leaving section 2
-                    if(index == 1 && direction =='down'){
-                        $("#menu").removeClass("whitemenu")
-                    }
-
-                    else if(index == 2 && direction == 'up'){
-                        $("#menu").addClass("whitemenu")
-                    }
-                }
-            });
-
-            $('#showExamples').click(function(e){
-                e.stopPropagation();
-                e.preventDefault();
-                $('#examplesList').toggle();
-            });
-
-            $('html').click(function(){
-                $('#examplesList').hide();
-            });
-        });
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </head>
 <body>
+<div class="toggle-menu">=</div>
 <ul id="menu" class="menu whitemenu">
     <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
     <li data-menuanchor="secondPage"><a href="#secondPage">BACKGROUND</a></li>
@@ -83,6 +52,16 @@
         </div>
     </div>
     <div class="section" id="section1">
+        <div class="background">
+            <header class="title">China’s Water Crisis</header>
+            <section class="content">Water health and safety is the biggest challenge to China’s sustainable growth. Over 50% of China’s water sources are contaminated.  Nowhere is this strain felt more than China’s countryside.  Over 298 million people in rural areas lack access to clean drinking water, a crisis which stunts economic growth and development.  </section>
+        </div>
+        <div class="background">
+            <header class="title">Your Project</header>
+            <section class="content">Learn and make a difference.  You’ll work in cross-cultural teams to lead a needs-assessment of water quality challenges in selected villages in Yunnan.  Guided by experienced educators and practitioners, your data-driven work will lay the groundwork for a water filtration NGO’s expansion into this region.</section>
+        </div>
+    </div>
+    <div class="section" id="section2">
         <div class="slide active">
             1
         </div>
@@ -95,35 +74,107 @@
         <div class="slide">
             4
         </div>
-    </div>
-    <div class="section" id="section2">
-        <div class="intro">
 
-        </div>
     </div>
     <div class="section" id="section3">
-        <div class="intro">
-
+        <div class="learnings">
+            <dl class="1">
+                <dt>Gain Skills</dt>
+                <dd>Step into leadership roles. Practice teamwork<br>Bridge cross-cultural gaps.Learn how to problem solve</dd>
+            </dl>
+            <dl class="2">
+                <dt>Build Connections</dt>
+                <dd>Grow a network of peers<br>Receive mentoring from leaders</dd>
+            </dl>
+            <dl class="3">
+                <dt>Develop Perspective</dt>
+                <dd>See Chinese culture from fresh angles<br>Deepen insight into China’s contemporary issues</dd>
+            </dl>
+            <dl class="4">
+                <dt>Drive Impact</dt>
+                <dd>Help solve a rural community’s water quality challenge</dd>
+            </dl>
         </div>
-        <img data-src="imgs/tablets.png" alt="tablets" height="372" width="843" />
     </div>
     <div class="section" id="section4">
         <div class="intro">
-
+            <h3 class="takeaways-title">Upon Complatetion of the Trip, Participants Can Expect To:</h3>
+            <div class="takeaways">
+                <dl>
+                    <dt>Receive a Letter of Recommendation from IntoTheClouds Co-Founder Ming Khor</dt>
+                    <dd>University of Toronto, BA, International Relations</dd>
+                    <dd>University of Pennsylvania, MBA, Wharton School of Business</dd>
+                    <dd>University of Pennsylvania, MA, The Lauder Institute</dd>
+                </dl>
+                <dl>
+                    <dt>Receive a Letter of Recommendation from IntoTheClouds Co-Founder Jeffrey Kwan</dt>
+                    <dd>University of California, Berkeley, BA, Civil Engineering</dd>
+                    <dd>University of California, Berkeley, MA, Ecological Engineering</dd>
+                </dl>
+                <dl>
+                    <dt>Receive a Certificate of Participation<br> Create a Summary Report of Water Supply Quality for 20 Chinese Schools</dt>
+                    <dd>Learn Data Analysis Techniques informed by Wharton Customer Analytics Initiative curriculum</dd>
+                    <dd>Present findings to a leading non-profit providing water filtration systems in China </dd>
+                </dl>
+                <dl>
+                    <dt>Build Connections </dt>
+                    <dd>Make friends with students from top high schools in the United States and China.</dd>
+                    <dd>Join the 100k Strong Foundation initiative.  Receive resources, and join a vibrant alumni network of China enthusiasts.</dd>
+                    <dd>Connect with locals and establish a network with communities in Yunnan.</dd>
+                </dl>
+                <dl>
+                    <dt>Receive College and Career Guidance </dt>
+                    <dd>Learn how to reflect on the issues of water, sustainable development and cross-cultural collaboration. </dd>
+                    <dd>Integrate your insights into your career planning and college applications, receive mentorship from our staff.</dd>
+                </dl>
+                <dl>
+                    <dt>Develop an Understanding of the Water Issues in China</dt>
+                    <dd>Gain perspective on one of China’s most pressing contemporary issues from scientific, academic, and business angles.</dd>
+                </dl>
+            </div>
         </div>
-        <img data-src="imgs/tablets.png" alt="tablets" height="372" width="843" />
     </div>
     <div class="section" id="section5">
-        <div class="intro">
-
+        <h3 class="team-title">Our team is comprised of Teach for China veterans with a shared passion for enriching the lives of youth.</h3>
+        <div class="team">
+            <ul>
+                <li class="photo"><img src="" alt="" /></li>
+                <li class="name">Ming Khor</li>
+                <li class="exp">MBA, Wharton School of Business,<br>Teach For China</li>
+            </ul>
+            <ul>
+                <li class="photo"><img src="" alt="" /></li>
+                <li class="name">Jeffrey Kwan</li>
+                <li class="exp">MsC in Civil and Environmental <br>Engineering at Cal,<br>Teach For China</li>
+            </ul>
+            <ul>
+                <li class="photo"><img src="" alt="" /></li>
+                <li class="name">Meiming Wang</li>
+                <li class="exp">Major in TCFL,<br>Sichuan International Studies University<br> Teach For China</li>
+            </ul>
         </div>
-        <img data-src="imgs/tablets.png" alt="tablets" height="372" width="843" />
+        <div class="team">
+            <ul>
+                <li class="photo"><img src="" alt="" /></li>
+                <li class="name">Marian Zhen</li>
+                <li class="exp">BA, Chemistry and Math, <br>New York University, <br>Teach for China</li>
+            </ul>
+            <ul>
+                <li class="photo"><img src="" alt="" /></li>
+                <li class="name">Wai Cheng</li>
+                <li class="exp">BA in International Relations,<br> Tufts University, <br>Teach For China</li>
+            </ul>
+        </div>
+        <div class="team">
+            <div class="sendmail">
+                <img src="" alt="">
+            </div>
+        </div>
     </div>
     <div class="section" id="section6">
         <div class="intro">
 
         </div>
-        <img data-src="imgs/tablets.png" alt="tablets" height="372" width="843" />
     </div>
 
 </div>
