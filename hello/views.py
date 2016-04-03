@@ -7,7 +7,7 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    return HttpResponse('Hello from intotheclouds team!')
+    return HttpResponse('Fu Jian! Hello from intotheclouds team!')
     # return render(request, 'index.html')
 
 
