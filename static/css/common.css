@@ -24,7 +24,7 @@
     background:url(../img/7.jpg) no-repeat center top;
     background-size:100% 100%;
 }
-#section2 img{width:100%;height:auto;margin: 0;opacity: 0.5}
+
 .fp-controlArrow.fp-prev {left:210px;}
 html{
     font-size: 20px;
@@ -447,3 +447,22 @@ h3.team-title{
     margin-left:2rem;
 }
 .footer span a{color: #fff;}
+
+.slide{
+    height:100%;
+    overflow: hidden;
+    position: relative;
+}
+#section2 img{width:100%;height:auto;margin: 0;opacity: 0.5}
+.slide .foot{
+    width: 100%;
+    position: absolute;
+    top:80%;
+    text-align: center;
+    box-sizing: 100%;
+    padding-left:5%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    z-index: 100000;
+    color: #333;
+}
