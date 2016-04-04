@@ -156,13 +156,15 @@ button.login{
     display: block;
     width:20%;
     float: left;
-    font-size:.5rem;
+    font-size:.8rem;
 }
 .login-frame ul li input{
     width:80%;
     border:none;
     border-bottom:1px solid #000;
     background: none;
+    font-size: .8rem;
+    height: 70%;
 }
 .login-frame ul li button.get-info{
     width:70%;
