@@ -40,8 +40,15 @@ $(document).ready(function(){
         $(this).hide()
         $(".login-frame").show()
     })
+    $("#open-letter").click(function(){
+        $("#letter-paper").show()
+    })
+    $("#close-paper").click(function(){
+        $("#letter-paper").hide()
+    })
     $(".close").click(function(){
         $(this).parent().hide()
         $(".login").show()
     })
+
  });
