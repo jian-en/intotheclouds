@@ -72,7 +72,7 @@ h2.slogan{
     z-index: 70;
     width: 200px;
     padding: 0;
-    margin:6.5rem 0 0 1.5rem;
+    margin:4.5rem 0 0 1.5rem;
 }
 #menu li{
     width:200px;
@@ -285,31 +285,31 @@ button.login{
     box-sizing: border-box;
 }
 .learnings dl:nth-child(2) dt{
-    width:46%;
+    width:51.5%;
 }
 .learnings dl:nth-child(3) dt{
-    width:38%;
+    width:43.5%;
 }
 .learnings dl:nth-child(4) dt{
-    width:32.5%;
+    width:36%;
 }
 .learnings dl:nth-child(5) dt{
-    width:32.5%;
+    width:32%;
 }
 
 h3.takeaways-title{
     width:44.5rem;
     font-size: 1.2rem;
-    margin-bottom:2rem;
+    margin-bottom:1.5rem;
     float: right;
-    margin-right:7%;
+    margin-right:10%;
     color: #333;
 }
 .takeaways{
     width:44.5rem;
     height:27.7rem;
     float: right;
-    margin-right:7%;
+    margin-right:10%;
     background: rgba(0, 0, 0, 0.5);
     padding:2rem 1.5rem;
     box-sizing: border-box;
@@ -337,6 +337,7 @@ h3.takeaways-title{
     padding-left:2rem;
     color:rgba(255,255,255,.3)
 }
+
 h3.team-title{
     width:39rem;
     font-size: 1.2rem;
@@ -459,7 +460,7 @@ h3.team-title{
 .slide .foot{
     width: 100%;
     position: absolute;
-    top:80%;
+    top:6%;
     text-align: center;
     box-sizing: 100%;
     padding-left:5%;
