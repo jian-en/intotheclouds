@@ -24,7 +24,7 @@
     background:url(../img/7.jpg) no-repeat center top;
     background-size:100% 100%;
 }
-#section2 img{width:100%;height:auto;margin: 0}
+
 .fp-controlArrow.fp-prev {left:210px;}
 html{
     font-size: 20px;
@@ -156,13 +156,15 @@ button.login{
     display: block;
     width:20%;
     float: left;
-    font-size:.5rem;
+    font-size:.8rem;
 }
 .login-frame ul li input{
     width:80%;
     border:none;
     border-bottom:1px solid #000;
     background: none;
+    font-size: .8rem;
+    height: 70%;
 }
 .login-frame ul li button.get-info{
     width:70%;
@@ -189,12 +191,52 @@ button.login{
 }
 .background header.title{
     height:4.3rem;
-    background: rgba(0, 160, 250, .4);
+    background: rgba(5, 152, 206, .54);
     color:#fff;
     font-size: 1.3rem;
     text-align: left;
     display: -webkit-box;
     -webkit-box-align:end;
+    box-sizing: border-box;
+    padding:.7rem 4.5rem;
+    position: relative;
+}
+.background header.title em{
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.3);
+    border-radius: 50%;
+    top:.7rem;left:3.4rem;
+}
+.background header.title em b{
+    position: absolute;
+    width:.2rem;height:.2rem;
+    background: rgba(255, 255, 255, 0.5);;
+    left:60%;
+    top:30%;
+    border-radius: 50%;
+}
+.background header.title .cycle-1{
+    width: 1.2rem;
+    height:1.2rem;
+}
+.background header.title .cycle-2{
+    width:1rem;height:1rem;
+    top:1.3rem;left:2.2rem;
+}
+.background header.title .cycle-2 b{width:.15rem;height:.15rem}
+.background header.title .cycle-3{
+    width:.6rem;height:.6rem;
+    top:2.5rem;left:2rem;
+}
+.background header.title .cycle-3 b{width:.1rem;height:.1rem}
+.background header.title .cycle-4{
+    width:.4rem;height:.4rem;
+    top:3.2rem;left:2.7rem;
+}
+.background header.title .cycle-5{
+    width:.2rem;height:.2rem;
+    top:3.5rem;left:3.4rem;
 }
 .background section.content{
     padding:1.5rem;
@@ -338,8 +380,91 @@ h3.team-title{
 }
 .team .letter{
     font-size: .5rem;
+    cursor: pointer;
 }
 .team .letter img{
     width:5rem;
     margin-bottom:.5rem;
+}
+#letter-paper{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: .45rem;
+    text-align: left;
+    padding:4rem 6.5rem 0 16rem;
+    box-sizing: border-box;
+    background: url(../img/letterpaper.jpg) no-repeat left top;
+    background-size: 100% 100%;
+    display: none;
+    opacity: .9;
+}
+#letter-paper h4{
+    font-size: 1rem;
+    margin-bottom:1rem;
+}
+#letter-paper p{
+    color: #000;
+}
+#letter-paper section{
+    padding-top:1rem;
+}
+#letter-paper section p{
+    margin-bottom:1rem;
+}
+#letter-paper #close-paper{
+    font-family: "helvetica neue",sans-serif;;
+    position: absolute;
+    width:4rem;
+    height:4rem;
+    right:2rem;
+    top:2rem;
+    font-size: 4rem;
+    color: #000;
+    font-weight: 100;
+    cursor: pointer;
+}
+.partenrs{
+    padding-bottom:10%;
+    padding-left:10%;
+}
+.partenrs img{
+    height:3rem;
+    margin:0 2rem 2rem 0;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom:5%;
+    font-size: .7rem;
+    color:#fff;
+    text-align: left;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+.footer span{
+    float: right;
+    margin-left:2rem;
+}
+.footer span a{color: #fff;}
+
+.slide{
+    height:100%;
+    overflow: hidden;
+    position: relative;
+}
+#section2 img{width:100%;height:auto;margin: 0;opacity: 0.5}
+.slide .foot{
+    width: 100%;
+    position: absolute;
+    top:80%;
+    text-align: center;
+    box-sizing: 100%;
+    padding-left:5%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    z-index: 100000;
+    color: #333;
 }
