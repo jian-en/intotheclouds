@@ -288,10 +288,10 @@ button.login{
     width:51.5%;
 }
 .learnings dl:nth-child(3) dt{
-    width:43.5%;
+    width:39.5%;
 }
 .learnings dl:nth-child(4) dt{
-    width:36%;
+    width:33.5%;
 }
 .learnings dl:nth-child(5) dt{
     width:32%;
@@ -408,6 +408,7 @@ h3.team-title{
 }
 #letter-paper p{
     color: #000;
+    margin-top: 8px;
 }
 #letter-paper section{
     padding-top:1rem;
