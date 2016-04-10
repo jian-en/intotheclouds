@@ -37,8 +37,9 @@ $(document).ready(function(){
     });
 
     $(".login").click(function(){
-        $(this).hide()
+        //$(this).hide()
         $(".login-frame").show()
+
     })
     $("#open-letter").click(function(){
         $("#letter-paper").show()
@@ -50,5 +51,8 @@ $(document).ready(function(){
         $(this).parent().hide()
         $(".login").show()
     })
+    // 提交表单事件
+    $(".get-info").click(function(){
 
+    })
  });

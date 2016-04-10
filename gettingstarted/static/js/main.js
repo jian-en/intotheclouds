@@ -53,4 +53,21 @@ $(document).ready(function(){
         $(".login").show()
     })
 
+    //提交表单事件
+    $(".get-info").click(function(){
+        //获取相应参数
+        var name = $("#name").val()
+        var email = $("#email").val()
+
+        $.post("/customer-info", {
+          name: name,
+          email: email
+        }, function (data, textStatus){
+          alert(textStatus + "\n" + data)
+        }).fail(function() {
+          alert("Data Error")
+        })
+
+    })
+
  });
